@@ -5,11 +5,13 @@
  */
 public class Triangle {
 	public static void main(String[] args) {
+		// takes integers from user to represent sides of triangle
 		int a = Integer.parseInt(args[0]);
 		int b = Integer.parseInt(args[1]);
 		int c = Integer.parseInt(args[2]);
+		// tests triangle inequality theorem
 		boolean triangle = ((a + b) > c) & ((b + c) > a) & ((c + a) > b);
+		// prints values and whether or not it can form a triangle
 		System.out.println(a + ", " + b + ", " + c + ": " + triangle);
-
 	}
 }
